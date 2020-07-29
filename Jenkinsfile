@@ -5,19 +5,10 @@
      sayHello 'Dave'
  } */
 
+@Library("static-shared-lib@master") _
 node {
-    stage("Checkout"){
-        checkout([
-            // checkout source code
-        ])
-    }
-    stage("Compile"){
-        sh("${tool 'Apache Maven 3.3.9'}/bin/mvn compile")
-    }
-    stage("Test"){
-        sh("${tool 'Apache Maven 3.3.9'}/bin/mvn test")
-    }
-    stage("Install"){
-        sh("${tool 'Apache Maven 3.3.9'}/bin/mvn install")
-    }
+    helloWorld "Hello from staticly configured shared library"
+
+    // @Library("static-shared-lib@master") 
+    // import by.bulgak.jenkins.lib.HelloWorld
 }
