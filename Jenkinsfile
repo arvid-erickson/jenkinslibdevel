@@ -3,7 +3,7 @@
 
 // This shows a simple example of how to archive the build output artifacts.
 node {
-    stages {
+ 
         stage "Create build output" {
     
             // Make the output directory.
@@ -20,5 +20,5 @@ node {
             // Archive the build output artifacts.
             archiveArtifacts artifacts: 'output/*.txt', excludes: 'output/*.md'
         }
-    }
+
 }
