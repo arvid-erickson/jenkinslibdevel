@@ -29,4 +29,5 @@ node {
               PATH=$PATH + '/opt/apps/buildtools/gradle-4.7/bin'    
           }
      }
+     env.workspace = pwd()
 }
