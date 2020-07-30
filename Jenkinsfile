@@ -34,6 +34,7 @@ node {
      env.workspace = pwd()
      println "value of workspace is ${env.workspace}"
      if (currentBuild.rawBuild.getCauses().toString().contains("UserId")) { }
+     
      stage("Deployment") { }
      stage("Activation") { }
      stage("Restart") { }
