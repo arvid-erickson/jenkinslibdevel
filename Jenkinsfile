@@ -4,7 +4,7 @@
 // This shows a simple example of how to archive the build output artifacts.
 node {
    stage ("Module test") {
-       def rotdir = pwd()
+       def rootdir = pwd()
        def exampleModule = load "${rootDir}@script/Example.Groovy"
        exampleModule.exampleMethod()
        exampleMdoule.otherExampleMethod()
