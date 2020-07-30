@@ -4,6 +4,7 @@
      echo 'Hello world'
      sayHello 'Dave'
  } */
+/*
 env.workspace = ''
 if(env.BRANCH_NAME =~ /PR-\d+/){return}
 
@@ -43,3 +44,6 @@ node {
      
      stage "Cleanup" { }
 }
+*/
+@Library('shared-library-name') _
+evenOrOdd(currentBuild.getNumber())
