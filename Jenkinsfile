@@ -36,7 +36,10 @@ node {
      if (currentBuild.rawBuild.getCauses().toString().contains("UserId")) { }
      
      stage "Deployment" { }
+     
      stage "Activation" { }
+     
      stage "Restart" { }
+     
      stage "Cleanup" { }
 }
