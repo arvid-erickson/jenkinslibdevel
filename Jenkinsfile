@@ -13,13 +13,13 @@ node {
      stage "Create build output"
     
      // Make the output directory.
-     // sh "mkdir -p output"
+     sh "mkdir -p output"
 
      // Write an useful file, which is needed to be archived.
-     // writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
+     writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
 
      // Write an useless file, which is not needed to be archived.
-     // writeFile file: "output/uselessfile.md", text: "This file is useless, no need to archive it."
+     writeFile file: "output/uselessfile.md", text: "This file is useless, no need to archive it."
 
      stage "Archive build output"
     
@@ -35,8 +35,8 @@ node {
      println "value of workspace is ${env.workspace}"
      if (currentBuild.rawBuild.getCauses().toString().contains("UserId")) { }
      
-     stage("Deployment") { }
-     stage("Activation") { }
-     stage("Restart") { }
-     stage("Cleanup") { }
+     stage "Deployment" { }
+     stage "Activation" { }
+     stage "Restart" { }
+     stage "Cleanup" { }
 }
