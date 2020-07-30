@@ -23,4 +23,12 @@ node {
     
     // Archive the build output artifacts.
     archiveArtifacts artifacts: 'output/*.txt', excludes: 'output/*.md'
+    
+     stage("Build") {
+          environment {
+              PATH=$PATH + '/opt/apps/buildtools/gradle-4.7/bin'    
+          }
+          env.workspace = pwd()
+          println "value of workspace is ${env.workspace)"
+     }
 }
