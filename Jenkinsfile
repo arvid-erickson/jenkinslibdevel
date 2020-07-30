@@ -28,7 +28,5 @@ node {
           environment {
               PATH=$PATH + '/opt/apps/buildtools/gradle-4.7/bin'    
           }
-          env.workspace = pwd()
-          println "value of workspace is ${env.workspace)"
      }
 }
