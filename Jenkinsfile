@@ -30,4 +30,5 @@ node {
           }
      }
      env.workspace = pwd()
+     println "value of workspace is ${env.workspace}"
 }
