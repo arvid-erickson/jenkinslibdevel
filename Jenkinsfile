@@ -6,8 +6,11 @@
    stage ("Module test") {
        def rootdir = pwd()
        def exampleModule = load "${rootDir}@script/Example.Groovy"
+       echo("loading library")
        exampleModule.exampleMethod()
+       echo("exec .exampleMethod()")
        exampleMdoule.otherExampleMethod()
+       echo("exec .otherExampleMethod()")
    }
 */
 sayHello()
