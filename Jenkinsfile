@@ -4,12 +4,9 @@
 node {
     stage('Git Checkout') {
         checkout scm
-        /*
-        vcCheckout(
-            branch: "master",
-            url: "https://github.com/arvid-erickson/jenkinslibdevel""
-        )
-        */
+    }
+    stage('pull library') {
+        
     }
 }
 
