@@ -1,14 +1,16 @@
 // @Library('your-library-name')_
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
 
-stage('Git Checkout') {
-    checkout scm
-    /*
-    vcCheckout(
-        branch: "master",
-        url: "https://github.com/arvid-erickson/jenkinslibdevel""
-    )
-    */
+node {
+    stage('Git Checkout') {
+        checkout scm
+        /*
+        vcCheckout(
+            branch: "master",
+            url: "https://github.com/arvid-erickson/jenkinslibdevel""
+        )
+        */
+    }
 }
 
 // This shows a simple example of how to archive the build output artifacts.
