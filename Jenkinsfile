@@ -2,7 +2,7 @@
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
 
 // This shows a simple example of how to archive the build output artifacts.
-pipeline {
+node {
     stages {
         stage "Create build output" {
     
