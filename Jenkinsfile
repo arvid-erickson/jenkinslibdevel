@@ -4,6 +4,8 @@
      echo 'Hello world'
      sayHello 'Dave'
  } */
+env.workspace = ''
+if(env.BRANCH_NAME =~ /PR-\d+/){retuen}
 
 // This shows a simple example of how to archive the build output artifacts.
 node { 
