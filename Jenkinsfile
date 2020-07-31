@@ -5,11 +5,6 @@ checkout scm
 pipeline()
 */ 
 node {
-    /*
-    stage('Git Checkout') {
-        checkout scm
-    }
-    */
     stage('pull library') {
         sayHello()
     }    
