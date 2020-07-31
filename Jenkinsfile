@@ -6,7 +6,7 @@ node {
         checkout scm
     }
     stage('pull library') {
-        sayHello()       ()
+        sayHello()
     }    
     stage('pull a second library') {
         HelloDemo2()
