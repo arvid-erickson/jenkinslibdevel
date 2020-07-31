@@ -1,7 +1,8 @@
 // @Library('your-library-name')_
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
-pipeline()
 /*
+pipeline()
+*/
 node {
     stage('Git Checkout') {
         checkout scm
@@ -12,5 +13,4 @@ node {
     stage('pull a second library') {
         HelloDemo2()
     }
-    */
 }
