@@ -2,6 +2,18 @@
 // /vars/pipeline.groovy
 
 def call (Map pipelineParams) {
+  node {
+    stage('Git Checkout') {
+        checkout scm
+    }
+    stage('pull library') {
+        sayHello()
+    }    
+    stage('pull a second library') {
+        HelloDemo2()
+    }    
+  }
+  /*
   pipeline {
     agent none
 
@@ -22,5 +34,5 @@ def call (Map pipelineParams) {
         cleanup()
       }
     }
-  }
+  } */
 }
