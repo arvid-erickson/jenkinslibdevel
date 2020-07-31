@@ -1,8 +1,9 @@
 // @Library('your-library-name')_
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
-/*
+/* */
+checkout scm
 pipeline()
-*/
+/* 
 node {
     stage('Git Checkout') {
         checkout scm
@@ -14,3 +15,4 @@ node {
         HelloDemo2()
     }
 }
+*/
