@@ -7,12 +7,6 @@ node {
   stage('pull library (1)') {
     sayHello()
   }  
-/*
-  stage('Print env testing (2)') {
-   //   sh 'printenv'
-      env()
-  }
-*/
   stage('exec cleanup') {
     cleanup() 
   }
