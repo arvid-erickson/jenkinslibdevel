@@ -16,4 +16,5 @@ stage('Print env testing') {
 */
 stage('pull a second library') {
     HelloDemo2()
+    printParams()
 }
