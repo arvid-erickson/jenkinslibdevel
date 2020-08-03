@@ -1,9 +1,9 @@
 def call()
 { /*
   env.workspace = ''
-
+  */
   if (currentBuild.rawBuild.getCauses().contains("UserId") || (currentBuild.rawBuild.getCauses().contains("RestoreFromCheckpointCause")){
-  
+  /*
     node('cdPipelineLINUX') {
       if (env.workspace == '' ){
         env.workspace = pwd()
@@ -18,7 +18,6 @@ def call()
         sh ""
       }
     }
-     
+   */  
   }
-                */
 }
