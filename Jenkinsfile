@@ -3,6 +3,7 @@
 
 env.workspace = ''
 
+node {
 stage('pull library (1)') {
     sayHello()
 }  
@@ -20,4 +21,5 @@ stage('Print env testing (2)') {
 
 stage('pull a second library (3)') {
     HelloDemo2()
+}
 }
