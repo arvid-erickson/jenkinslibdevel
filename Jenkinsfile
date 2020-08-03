@@ -1,7 +1,8 @@
 // @Library('your-library-name')_
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
 
-env.workspace = ''
+// env.workspace = ''
+env.workspace = pwd()
 
 node {
   stage('pull library (1)') {
