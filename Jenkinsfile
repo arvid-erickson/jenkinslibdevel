@@ -13,9 +13,9 @@ stage('Print env testing (2)') {
 //    sh 'env'
 //    echo sh(script: 'env', returnStdout: true)
 //        echo sh(returnStdout: true, script: 'env')
-    steps {
-      sh "printenv"
-    }
+//    steps {
+      sh 'printenv'
+//    }
 }
 
 stage('pull a second library (3)') {
