@@ -2,9 +2,7 @@
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
 
 env.workspace = ''
-for(e in env){
-        echo e + " is " + ${e}
-    }
+echo sh(returnStdout: true, script: 'env')
 
 stage('pull library') {
     sayHello()
