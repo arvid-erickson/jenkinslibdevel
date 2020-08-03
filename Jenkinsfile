@@ -9,7 +9,8 @@ node {
   }  
 
   stage('Print env testing (2)') {
-      sh 'printenv'
+   //   sh 'printenv'
+      printParam()
   }
 
   stage('pull a second library (3)') {
