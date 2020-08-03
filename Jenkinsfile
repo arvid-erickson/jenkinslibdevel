@@ -10,7 +10,7 @@ stage('pull library') {
     */
 }  
 stage('Print env testing') {
-    printParms()
+    printParams()
 }
 stage('pull a second library') {
     HelloDemo2()
