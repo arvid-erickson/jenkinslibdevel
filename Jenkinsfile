@@ -9,9 +9,11 @@ stage('pull library') {
     echo sh(returnStdout: true, script: 'env')
     */
 }  
+/*
 stage('Print env testing') {
     printParams()
 }
+*/
 stage('pull a second library') {
     HelloDemo2()
 }
