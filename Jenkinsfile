@@ -8,7 +8,7 @@ stage('pull library (1)') {
 }  
 
 stage('Print env testing (2)') {
-    printParams()
+//    printParams()
 }
 
 stage('pull a second library (3)') {
