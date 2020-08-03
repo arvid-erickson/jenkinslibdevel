@@ -9,7 +9,7 @@ def call()
         env.workspace = pwd()
       } */
       println "calue of workspace is ${env.workspace}"
-    
+   /* 
       if ("RELEASE".equals(env.JOB_TYPE)){
         println(""
         sh ""
@@ -18,7 +18,7 @@ def call()
         sh ""
       }
     }
-                /*
+     
   }
                 */
 }
