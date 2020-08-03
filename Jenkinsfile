@@ -8,7 +8,7 @@ stage('pull library (1)') {
 }  
 
 stage('Print env testing (2)') {
-//    printParams()
+    printParams()
 //    env.getEnvironment().each { name, value -> println "Name: $name -> Value $value" }
 //    sh 'env'
 //    echo sh(script: 'env', returnStdout: true)
