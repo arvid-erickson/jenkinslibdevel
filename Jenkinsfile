@@ -9,7 +9,8 @@ stage('pull library (1)') {
 
 stage('Print env testing (2)') {
 //    printParams()
-    env.getEnvironment().each { name, value -> println "Name: $name -> Value $value" }
+//    env.getEnvironment().each { name, value -> println "Name: $name -> Value $value" }
+    sh 'env'
 }
 
 stage('pull a second library (3)') {
