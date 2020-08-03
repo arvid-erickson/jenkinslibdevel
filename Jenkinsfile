@@ -3,18 +3,14 @@
 
 env.workspace = ''
 
-stage('pull library') {
+stage('pull library (1)') {
     sayHello()
-    /*
-    echo sh(returnStdout: true, script: 'env')
-    */
 }  
-/*
-stage('Print env testing') {
+
+stage('Print env testing (2)') {
     printParams()
 }
-*/
-stage('pull a second library') {
+
+stage('pull a second library (3)') {
     HelloDemo2()
-    printParams()
 }
