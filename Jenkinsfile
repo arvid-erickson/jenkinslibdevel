@@ -10,7 +10,8 @@ stage('pull library (1)') {
 stage('Print env testing (2)') {
 //    printParams()
 //    env.getEnvironment().each { name, value -> println "Name: $name -> Value $value" }
-    sh 'env'
+//    sh 'env'
+    echo sh(script: 'env', returnStdout: true)
 }
 
 stage('pull a second library (3)') {
