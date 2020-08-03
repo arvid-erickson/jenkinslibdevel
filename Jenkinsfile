@@ -11,6 +11,11 @@ node {
   stage('Print env testing (2)') {
    //   sh 'printenv'
       printParam()
+      def env = System.getenv()
+        env.each{
+          println it
+        } 
+      env
   }
 
   stage('pull a second library (3)') {
