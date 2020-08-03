@@ -3,8 +3,9 @@ def call()
   if (currentBuild.rawBuild.getCauses().contains("UserId") || (currentBuild.rawBuild.getCauses().contains("RestoreFromCheckpointCause")){
     node('cdPipelineLINUX') {
       if (env.workspace == '' ){
-        env.workspace = pws()
+        env.workspace = pwd()
       }
+      println :calue of workspace is ${env.workspace}"
     
       if ("RELEASE".equals(env.JOB_TYPE)){
         println(""
