@@ -13,6 +13,9 @@ node {
       env()
   }
 */
+  stage('exec cleanup') {
+    cleanup() 
+  }
   stage('pull a second library (3)') {
     HelloDemo2()
   }
