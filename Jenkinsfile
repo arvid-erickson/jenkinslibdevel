@@ -42,7 +42,7 @@ node {
             
             }
           }
-    } }
+
     stage('pull library (1)') {
       sayHello()
       }  
