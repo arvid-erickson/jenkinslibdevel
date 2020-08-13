@@ -3,7 +3,7 @@
 
 env.workspace = ''
 
-node {
+pipeline {
   stages {
     stage('pull library (1)') {
       sayHello()
