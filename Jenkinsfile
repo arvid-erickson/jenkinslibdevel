@@ -6,6 +6,7 @@ env.workspace = ''
 node {
 */
     stage("Interactive_Input") {
+        /*
       steps {
         script {
           def userInput = input(
@@ -19,6 +20,7 @@ node {
 
             }
           }
+          */
         }
     stage('pull library (1)') {
       sayHello()
