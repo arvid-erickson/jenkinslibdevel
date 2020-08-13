@@ -2,8 +2,9 @@
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
 
 env.workspace = ''
-
+/*
 node {
+*/
     stage('pull library (1)') {
       sayHello()
       }  
@@ -19,5 +20,6 @@ node {
     stage('pull a second library (3)') {
       HelloDemo2()
     }
- 
+/* 
 }
+*/
