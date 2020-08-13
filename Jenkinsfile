@@ -5,6 +5,7 @@ env.workspace = ''
 /*
 node {
 */
+    sayHello()
     stage('pull library (1)') {
       sayHello()
       }  
