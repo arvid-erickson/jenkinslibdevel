@@ -5,7 +5,8 @@ env.workspace = ''
 /*
 node {
 */
-
+pipeline()
+/*
     stage('pull library (1)') {
       sayHello()
       }  
@@ -21,6 +22,7 @@ node {
     stage('pull a second library (3)') {
       HelloDemo2()
     }
+    */
 /* 
 }
 */
