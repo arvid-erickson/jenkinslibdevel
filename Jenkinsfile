@@ -13,7 +13,7 @@ node {
           def inputConfig
           def inputTest
 
-          // Get the input
+          // Get the input (balanced)
           def userInput = input(
             id: 'userInput', message: 'Enter path of test reports:?',
             parameters: [
@@ -42,7 +42,7 @@ node {
             
             }
           }
-        }
+    } }
     stage('pull library (1)') {
       sayHello()
       }  
