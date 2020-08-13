@@ -13,7 +13,7 @@ node {
       sayHello()
       }
     stage('pull library (3)') {
-      sayHello()
+      HelloDemo2()
       }  
     stage('pull library (4)') {
       sayHello()
