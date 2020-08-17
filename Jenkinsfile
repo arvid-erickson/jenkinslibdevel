@@ -5,12 +5,12 @@ library(
   retriever: modernSCM(
     [
       $class: 'GitSCMSource',
-      // remote: 'https://github.com/hoto/jenkins-shared-library.git'
-      remote: 'github.com/arvid-erickson/jenkinslibdevel/jenkinslibdevel.git'
+      remote: 'https://github.com/hoto/jenkins-shared-library.git'
+      // remote: 'github.com/arvid-erickson/jenkinslibdevel/jenkinslibdevel.git'
     ]
   )
 )
-
+/*
 node {
   stage('build') {
     steps {
@@ -38,7 +38,7 @@ node {
     }  
   } 
 }
-/*
+*/
 pipeline {
   agent any
   stages {
@@ -51,7 +51,7 @@ pipeline {
     }
   }
 }
-*/
+
 
 /* Original code - 20200814 DO NOT DELETE!!!
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
