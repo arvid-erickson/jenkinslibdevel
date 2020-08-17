@@ -16,7 +16,7 @@ pipeline {
   stage('Where is Jenkins Shared Library cloned') {
       steps {
         script {
-          sh 'ls -la ../050-shared-library-where-is-it-cloned@libs/jenkins-shared-library'
+          sh 'ls -la ../002-stages-scripted-style@libs/jenkins-shared-library'
         }
       }
     }
