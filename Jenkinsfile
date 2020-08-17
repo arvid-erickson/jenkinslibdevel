@@ -52,36 +52,7 @@ pipeline {
   }
 }
 */
-/*
-pipeline {
-  stages {
 
-stage('build') {
-  steps {
-    echo "Command: ${args.command}"
-  }
-}
-stage('Deployment') {
-  steps {
-    echo "Command: ${args.command}"
-  }
-}
-stage('Activation') {
-  steps {
-    echo "Command: ${args.command}"
-  }
-}
-stage('Restart') {
-  steps {
-    echo "Command: ${args.command}"
-  }
-}
-stage('Cleanup') {
-  steps {
-    echo "Command: ${args.command}"
-  }
- } }
-} */
 /* Original code - 20200814 DO NOT DELETE!!!
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
 */
