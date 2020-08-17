@@ -11,7 +11,7 @@ library(
   )
 )
 */
-/*
+
 pipeline {
   agent any
   stages {
@@ -24,7 +24,7 @@ pipeline {
     }
   }
 }
-*/
+
 /*
 pipeline {
   stages {
