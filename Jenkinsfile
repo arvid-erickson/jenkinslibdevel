@@ -1,5 +1,5 @@
 // @Library('your-library-name')_
-/*
+
 library(
   identifier: 'jenkins-shared-library@1.0.4',
   retriever: modernSCM(
@@ -10,6 +10,7 @@ library(
     ]
   )
 )
+/*
 node {
   stage('build') {
     steps {
