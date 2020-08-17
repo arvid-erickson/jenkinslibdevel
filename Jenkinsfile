@@ -26,6 +26,7 @@ pipeline {
 }
 */
 pipeline {
+  stages {
 stage('build') {
   echo "Command: ${args.command}"
 }
@@ -40,7 +41,7 @@ stage('Restart') {
 }
 stage('Cleanup') {
   echo "Command: ${args.command}"
-}
+} }
 }
 /* Original code - 20200814 DO NOT DELETE!!!
 @Library('github.com/arvid-erickson/jenkinslibdevel') _
