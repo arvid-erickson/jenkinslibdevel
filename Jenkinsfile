@@ -11,35 +11,7 @@ library(
     ]
   )
 )
-/*
-node {
-  stage('build') {
-    steps {
-      echo "Command: ${args.command}"
-    }
-  }
-  stage('Deployment') {
-    steps {
-      echo "Command: ${args.command}"
-    }
-  }
-  stage('Activation') {
-    steps {
-      echo "Command: ${args.command}"
-    }
-  }
-  stage('Restart') {
-    steps {
-      echo "Command: ${args.command}"
-    }
-  }
-  stage('Cleanup') {
-    steps {
-      echo "Command: ${args.command}"
-    }  
-  } 
-}
-*/
+
 pipeline {
   agent any
   stages {
