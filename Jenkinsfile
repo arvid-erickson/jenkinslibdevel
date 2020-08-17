@@ -1,5 +1,5 @@
 // @Library('your-library-name')_
-
+/*
 library(
   identifier: 'jenkins-shared-library@1.0.4',
   retriever: modernSCM(
@@ -37,7 +37,7 @@ node {
     }  
   } 
 }
-/*
+*/
 pipeline {
   agent any
   stages {
@@ -50,7 +50,7 @@ pipeline {
     }
   }
 }
-*/
+
 /*
 pipeline {
   stages {
