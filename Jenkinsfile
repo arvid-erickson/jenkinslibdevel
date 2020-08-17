@@ -47,7 +47,7 @@ pipeline {
       steps {
         script {
           // sh 'ls -la ../050-shared-library-where-is-it-cloned@libs/jenkins-shared-library'
-          sh 'ls -la ../050-shared-library-where-is-it-cloned@libs/jenkins-shared-library'
+          sh 'ls -la ../jenkinslibdevel
         }
       }
     }
