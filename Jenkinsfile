@@ -28,19 +28,29 @@ pipeline {
 pipeline {
   stages {
 stage('build') {
-  echo "Command: ${args.command}"
+  steps {
+    echo "Command: ${args.command}"
+  }
 }
 stage('Deployment') {
-  echo "Command: ${args.command}"
+  steps {
+    echo "Command: ${args.command}"
+  }
 }
 stage('Activation') {
-  echo "Command: ${args.command}"
+  steps {
+    echo "Command: ${args.command}"
+  }
 }
 stage('Restart') {
-  echo "Command: ${args.command}"
+  steps {
+    echo "Command: ${args.command}"
+  }
 }
 stage('Cleanup') {
-  echo "Command: ${args.command}"
+  steps {
+    echo "Command: ${args.command}"
+  }
 } }
 }
 /* Original code - 20200814 DO NOT DELETE!!!
