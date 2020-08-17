@@ -10,7 +10,7 @@ library(
     ]
   )
 )
-/*
+
 node {
   stage('build') {
     steps {
@@ -38,7 +38,7 @@ node {
     }  
   } 
 }
-*/
+/*
 pipeline {
   agent any
   stages {
@@ -51,7 +51,7 @@ pipeline {
     }
   }
 }
-
+*/
 /*
 pipeline {
   stages {
