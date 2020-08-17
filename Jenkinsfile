@@ -7,7 +7,7 @@ library(
     [
       $class: 'GitSCMSource',
       // remote: 'https://github.com/hoto/jenkins-shared-library.git'
-      remote: 'github.com/arvid-erickson/jenkinslibdevel/jenkinslibdevel.git'
+      remote: 'github.com/arvid-erickson/jenkinslibdevel.git'
     ]
   )
 )
