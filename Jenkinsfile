@@ -9,6 +9,7 @@ library(
     ]
   )
 )
+/*
 pipeline {
   agent any
   stages {
@@ -20,6 +21,17 @@ pipeline {
       }
     }
   }
+}
+*/
+stage('build') {
+}
+stage('Deployment') {
+}
+stage('Activation') {
+}
+stage('Restart') {
+}
+stage('Cleanup') {
 }
 
 /* Original code - 20200814 DO NOT DELETE!!!
