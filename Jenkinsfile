@@ -7,7 +7,6 @@ library(
     [
       $class: 'GitSCMSource',
       remote: 'https://github.com/hoto/jenkins-shared-library.git'
-      // remote: 'github.com/arvid-erickson/jenkinslibdevel.git'
     ]
   )
 )
@@ -19,7 +18,6 @@ pipeline {
       steps {
         script {
           sh 'ls -la ../050-shared-library-where-is-it-cloned@libs/jenkins-shared-library'
-          // sh 'ls -la ../jenkinslibdevel
         }
       }
     }
