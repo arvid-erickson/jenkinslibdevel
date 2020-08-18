@@ -3,6 +3,7 @@
 
 def call (Map pipelineParams) {
   node {
+    /*
     stage('Git Checkout') {
         checkout scm
     }
@@ -13,10 +14,10 @@ def call (Map pipelineParams) {
         HelloDemo2()
     }    
   }
-  /*
+  
   pipeline {
     agent none
-
+*/
     stages {
       stage('Build') {
         build()
@@ -34,5 +35,5 @@ def call (Map pipelineParams) {
         cleanup()
       }
     }
-  } */
+  } 
 }
