@@ -6,8 +6,8 @@ library(
   retriever: modernSCM(
     [
       $class: 'GitSCMSource',
-   //   remote: 'https://github.com/hoto/jenkins-shared-library.git'
-      remote: 'https://github.com/arvid-erickson/jenkinslibdevel.git'
+      remote: 'https://github.com/hoto/jenkins-shared-library.git'
+   //   remote: 'https://github.com/arvid-erickson/jenkinslibdevel.git'
     ]
   )
 )
