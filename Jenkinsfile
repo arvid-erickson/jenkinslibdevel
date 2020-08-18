@@ -2,8 +2,8 @@
 @Library('github.com/arvid-erickson/jenkinslibdevel')_
 
 library(
-  identifier: 'jenkins-shared-library@1.0.4',
-//  identifier: 'jenkinslibdevel@master',
+//  identifier: 'jenkins-shared-library@1.0.4',
+  identifier: 'jenkinslibdevel@master',
   retriever: modernSCM(
     [
       $class: 'GitSCMSource',
