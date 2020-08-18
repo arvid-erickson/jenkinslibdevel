@@ -2,7 +2,7 @@
 
 library(
 //  identifier: 'jenkins-shared-library@1.0.4',
-  identifier: 'jenkinslibdevel@0.0.0',
+  identifier: 'jenkinslibdevel@0.0.1',
   retriever: modernSCM(
     [
       $class: 'GitSCMSource',
