@@ -13,9 +13,6 @@ library(
 
 stage("build") {}
 stage("Deployment") {}
-checkpoint("checkpoint after deployment and before middleware componenets activation")
 stage("Activation") {}
-checkpoint("checkpoint after middleware compoonets activation and before ACM restart")
 stage("Restart") {}
-checkpoint("checkpoint after ACM restart and before missleware component cleanup")
 stage("Cleanup") {}
