@@ -1,5 +1,5 @@
 // @Library('your-library-name')_
-@Library('github.com/arvid-erickson/jenkinslibdevel')
+@Library('github.com/arvid-erickson/jenkinslibdevel')_
 
 library(
   identifier: 'jenkins-shared-library@1.0.4',
