@@ -22,9 +22,6 @@ def call (Map pipelineParams) {
       stage('Git Checkout') {
         checkout scm
       }
-      stage('pull library') {
-        sayHello()
-      } 
       stage('Build') {
         build()
       }
