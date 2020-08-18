@@ -2,13 +2,13 @@
 @Library('github.com/arvid-erickson/jenkinslibdevel')
 
 library(
-//  identifier: 'jenkins-shared-library@1.0.4',
-  identifier: 'jenkinslibdevel@master',
+  identifier: 'jenkins-shared-library@1.0.4',
+//  identifier: 'jenkinslibdevel@master',
   retriever: modernSCM(
     [
       $class: 'GitSCMSource',
-   //   remote: 'https://github.com/hoto/jenkins-shared-library.git'
-      remote: 'https://github.com/arvid-erickson/jenkinslibdevel.git'
+      remote: 'https://github.com/hoto/jenkins-shared-library.git'
+ //     remote: 'https://github.com/arvid-erickson/jenkinslibdevel.git'
     ]
   )
 )
