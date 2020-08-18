@@ -2,12 +2,10 @@
 @Library('github.com/arvid-erickson/jenkinslibdevel')_
 
 library(
-//  identifier: 'jenkins-shared-library@1.0.4',
   identifier: 'jenkinslibdevel@master',
   retriever: modernSCM(
     [
       $class: 'GitSCMSource',
- //     remote: 'https://github.com/hoto/jenkins-shared-library.git'
       remote: 'https://github.com/arvid-erickson/jenkinslibdevel.git'
     ]
   )
@@ -21,6 +19,7 @@ pipeline {
         script {
           // sh 'ls -la ../002-stages-scripted-style@libs/jenkins-shared-library'
           echo 'calling nothing'
+          sh 'ls -la .'
         }
       }
     }
