@@ -10,7 +10,7 @@ library(
     ]
   )
 )
-
+/*
 pipeline {
   agent any
   stages {
@@ -25,3 +25,9 @@ pipeline {
     }
   }
 }
+*/
+stage("build") {}
+stage("Deployment") {}
+stage("Activation") {}
+stage("Restart") {}
+stage("Cleanup") {}
