@@ -19,6 +19,12 @@ def call (Map pipelineParams) {
     agent none
 */
     stages {
+      stage('Git Checkout') {
+        checkout scm
+      }
+      stage('pull library') {
+        sayHello()
+      } 
       stage('Build') {
         build()
       }
