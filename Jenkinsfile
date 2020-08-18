@@ -14,7 +14,7 @@ library(
 pipeline {
   agent any
   stages {
-  stage('Where is Jenkins Shared Library cloned') {
+    stage('Where is Jenkins Shared Library cloned') {
       steps {
         script {
           // sh 'ls -la ../002-stages-scripted-style@libs/jenkins-shared-library'
@@ -25,8 +25,3 @@ pipeline {
     }
   }
 }
-
-
-/* Original code - 20200814 DO NOT DELETE!!!
-@Library('github.com/arvid-erickson/jenkinslibdevel') _
-*/
