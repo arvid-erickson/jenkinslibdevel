@@ -10,7 +10,7 @@ library(
     ]
   )
 )
- 
+stage("Checkout") {}
 stage("build") {}
 stage("Deployment") {}
 stage("Activation") {}
