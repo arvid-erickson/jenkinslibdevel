@@ -1,8 +1,9 @@
 !#/usr/bin/env groovy
 // /vars/pipeline.groovy
 
-def call (Map pipelineParams) {
-  node {
+// def call (Map pipelineParams) {
+def call() {
+node {
     stages {
       stage('Git Checkout') {
         checkout scm
