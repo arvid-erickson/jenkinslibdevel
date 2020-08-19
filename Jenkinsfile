@@ -10,11 +10,12 @@ library(
     ]
   )
 )
-/*
+ 
 stage("build") {}
 stage("Deployment") {}
 stage("Activation") {}
 stage("Restart") {}
 stage("Cleanup") {}
-*/
+/* 
 pipeline()
+*/
