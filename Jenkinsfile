@@ -11,7 +11,7 @@ library(
   )
 )
 
-pipeline()
+vars/pipeline()
 /*
 stage("Checkout") {}
 stage("build") {}
