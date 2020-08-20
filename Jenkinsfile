@@ -10,12 +10,13 @@ library(
     ]
   )
 )
-/*
+
 pipeline()
-*/
+/*
 stage("Checkout") {}
 stage("build") {}
 stage("Deployment") {}
 stage("Activation") {}
 stage("Restart") {}
 stage("Cleanup") {}
+*/
