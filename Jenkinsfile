@@ -15,7 +15,7 @@ pipeline()
 
 vars/pipeline()
 */
-pipeline {
+stages {
   stage("Checkout") {}
   stage("build") {}
   stage("Deployment") {}
