@@ -30,16 +30,14 @@ pipeline{
         MY_FILE = fileExists '/tmp/myfile'
     } 
     stages{ */
-        stage('conditional if exists'){
-            when { expression { MY_FILE == 'true' } }
+        stage('Build'){
             steps {
-                echo "file exists"
+                echo "Build"
             }
         }
-        stage('conditional if not exists'){
-            when { expression { MY_FILE == 'false' } }
+        stage('Deploy'){
             steps {
-                echo "file does not exist"
+                echo "Deploy"
             }
         } 
 /*
