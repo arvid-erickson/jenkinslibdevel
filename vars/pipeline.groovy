@@ -4,7 +4,7 @@
 // def call (Map pipelineParams) {
 def call() {
     def pipeline {
-    node {
+      {
       stage('Git Checkout') {
         checkout scm
       }
