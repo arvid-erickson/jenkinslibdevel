@@ -17,7 +17,7 @@ vars/pipeline()
 */
 
   stage("Checkout") {}
-  stage("build") { build() }
+  stage("build") {}
   stage("Deployment") {}
   stage("Activation") {}
   stage("Restart") {}
