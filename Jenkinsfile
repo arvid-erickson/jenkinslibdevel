@@ -28,7 +28,7 @@ pipeline{
     environment{
         MY_FILE = fileExists '/tmp/myfile'
     }
-    stages{
+//    stages{
         stage('conditional if exists'){
             when { expression { MY_FILE == 'true' } }
             steps {
@@ -41,5 +41,5 @@ pipeline{
                 echo "file does not exist"
             }
         }
-    }
+  //  }
 }
