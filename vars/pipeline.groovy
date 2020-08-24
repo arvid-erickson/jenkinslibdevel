@@ -8,6 +8,7 @@ def call() {
     stages {
     def pipeline
     */
+    node {
       stage('Git Checkout') {
         checkout scm
       }
@@ -26,6 +27,7 @@ def call() {
       stage('Cleanup') {
         cleanup()
       }
+    }
     /*
     }
   } */
