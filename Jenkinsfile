@@ -15,11 +15,11 @@ pipeline()
 
 vars/pipeline()
 */
-stages {
+
   stage("Checkout") {}
   stage("build") {}
   stage("Deployment") {}
   stage("Activation") {}
   stage("Restart") {}
   stage("Cleanup") {}
-}
+
