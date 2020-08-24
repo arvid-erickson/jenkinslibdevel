@@ -10,11 +10,11 @@ library(
     ]
   )
 )
-
-pipeline()
 /*
-vars/pipeline()
+pipeline()
 */
+vars/pipeline()
+
 /*
   stage("Checkout") {}
   stage("build") {}
