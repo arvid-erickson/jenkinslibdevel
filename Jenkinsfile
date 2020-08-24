@@ -23,12 +23,13 @@ vars/pipeline()
   stage("Restart") {}
   stage("Cleanup") {}
 */
+/*
 pipeline{
     agent any
     environment{
         MY_FILE = fileExists '/tmp/myfile'
-    }
-//    stages{
+    } 
+    stages{ */
         stage('conditional if exists'){
             when { expression { MY_FILE == 'true' } }
             steps {
@@ -40,6 +41,8 @@ pipeline{
             steps {
                 echo "file does not exist"
             }
-        }
-  //  }
+        } 
+/*
+    }
 }
+*/
