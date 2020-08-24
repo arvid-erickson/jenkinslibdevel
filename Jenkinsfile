@@ -28,8 +28,8 @@ pipeline{
     agent any
     environment{
         MY_FILE = fileExists '/tmp/myfile'
-    } 
-    stages{ */
+    } */
+    stages{ 
         stage('Build'){
             steps {
                 echo "Build"
@@ -40,7 +40,8 @@ pipeline{
                 echo "Deploy"
             }
         } 
+
+    } 
 /*
-    }
 }
 */
