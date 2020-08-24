@@ -14,7 +14,7 @@ library(
 pipeline()
 
 vars/pipeline()
-
+*/
 
   stage("Checkout") {}
   stage("build") { build() }
@@ -22,13 +22,13 @@ vars/pipeline()
   stage("Activation") {}
   stage("Restart") {}
   stage("Cleanup") {}
-*/
+
 /*
 pipeline{
     agent any
     environment{
         MY_FILE = fileExists '/tmp/myfile'
-    } */
+    } 
     stages{ 
         stage('Build'){
             steps {
@@ -40,8 +40,6 @@ pipeline{
                 echo "Deploy"
             }
         } 
-
     } 
-/*
 }
 */
