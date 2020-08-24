@@ -10,16 +10,16 @@ library(
     ]
   )
 )
-/*
-pipeline()
 
+pipeline()
+/*
 vars/pipeline()
 */
-
+/*
   stage("Checkout") {}
   stage("build") {}
   stage("Deployment") {}
   stage("Activation") {}
   stage("Restart") {}
   stage("Cleanup") {}
-
+*/
