@@ -10,11 +10,7 @@ library(
     ]
   )
 )
-/*
-pipeline()
 
-vars/pipeline()
-*/
 
   stage("Checkout") {}
   stage("build") {}
@@ -23,23 +19,4 @@ vars/pipeline()
   stage("Restart") {}
   stage("Cleanup") {}
 
-/*
-pipeline{
-    agent any
-    environment{
-        MY_FILE = fileExists '/tmp/myfile'
-    } 
-    stages{ 
-        stage('Build'){
-            steps {
-                echo "Build"
-            }
-        }
-        stage('Deploy'){
-            steps {
-                echo "Deploy"
-            }
-        } 
-    } 
-}
-*/
+
