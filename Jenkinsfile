@@ -25,7 +25,8 @@ library(
   stage("Restart") {}
   stage("Cleanup") {
     println 'Testing clenaup f(x) call'
-    cleanup()
+//    cleanup()
+    printparms()
   }
 /*
 pipeline()
