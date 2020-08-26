@@ -28,9 +28,7 @@ library(
     println 'Restart'
   }
   stage("Cleanup") {
-    println 'Testing clenaup f(x) call'
-//    cleanup()
-//    printparms()
+    println 'Cleanup'
   }
 /*
 pipeline()
