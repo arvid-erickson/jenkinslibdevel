@@ -12,6 +12,9 @@ library(
 )
 */
   env.workspace = ''
+  if (env.workspace == '') {
+      env.workspace = pwd()
+    }
   environment {
     PATH=$PATH + '/opt/gradle/gradle-6.5.1/bin'
   }
@@ -29,9 +32,7 @@ library(
   }
   stage("Activation") {
     println 'Activation'
-    if (env.workspace == '') {
-      env.workspace = pwd()
-    }
+
   }
   stage("Restart") {
     println 'Restart'
