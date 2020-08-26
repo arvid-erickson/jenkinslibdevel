@@ -19,12 +19,14 @@ library(
     sayHello()
   }
   stage("Deployment") {
-    println 'Deployment stage'
-    env() 
+
   }
   stage("Activation") {}
   stage("Restart") {}
-  stage("Cleanup") {}
+  stage("Cleanup") {
+    println 'Testing clenaup f(x) call'
+    cleanup()
+  }
 /*
 pipeline()
 */
