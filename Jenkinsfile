@@ -1,6 +1,6 @@
 // @Library('your-library-name')_
 @Library('github.com/arvid-erickson/jenkinslibdevel')_
-
+/*
 library(
   identifier: 'jenkinslibdevel@master',
   retriever: modernSCM(
@@ -10,7 +10,7 @@ library(
     ]
   )
 )
-
+*/
 
   stage("Checkout") { println 'Checkout stage' }
   stage("build") { println 'Build stage' }
