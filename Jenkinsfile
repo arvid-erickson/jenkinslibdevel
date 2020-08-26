@@ -11,6 +11,10 @@ library(
   )
 )
 */
+  env.workspace = ''
+  environment {
+    PATH=$PATH + '/opt/gradle/gradle-6.5.1/bin'
+  }
   boolean testValue = false
   stage("Checkout") { 
     println 'Checkout stage'
@@ -25,6 +29,7 @@ library(
   }
   stage("Activation") {
     println 'Activation'
+    env.workspace = pwd()
   }
   stage("Restart") {
     println 'Restart'
