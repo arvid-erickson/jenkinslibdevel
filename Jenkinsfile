@@ -11,7 +11,6 @@ library(
   )
 )
 */
-/*
   stage("Checkout") { 
     println 'Checkout stage'
   }  
@@ -23,5 +22,6 @@ library(
   stage("Activation") {}
   stage("Restart") {}
   stage("Cleanup") {}
-*/
+/*
 pipeline()
+*/
