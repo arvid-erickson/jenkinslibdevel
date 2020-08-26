@@ -32,6 +32,3 @@ library(
   stage("Cleanup") {
     println 'Cleanup'
   }
-
-pipeline()
-
