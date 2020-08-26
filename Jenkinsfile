@@ -18,7 +18,10 @@ library(
     println 'Build stage' 
     sayHello()
   }
-  stage("Deployment") {}
+  stage("Deployment") {
+    println 'Deployment stage'
+    env() 
+  }
   stage("Activation") {}
   stage("Restart") {}
   stage("Cleanup") {}
