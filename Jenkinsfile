@@ -12,8 +12,8 @@ library(
 )
 
 
-  stage("Checkout") {}
-  stage("build") {}
+  stage("Checkout") { println 'Checkout stage' }
+  stage("build") { println 'Build stage' }
   stage("Deployment") {}
   stage("Activation") {}
   stage("Restart") {}
