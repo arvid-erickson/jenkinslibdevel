@@ -11,6 +11,7 @@ library(
   )
 )
 */
+  boolean testValue = false
   stage("Checkout") { 
     println 'Checkout stage'
   }  
@@ -20,6 +21,7 @@ library(
   }
   stage("Deployment") {
     println 'Deployment'
+    print(testValue)
   }
   stage("Activation") {
     println 'Activation'
