@@ -28,7 +28,7 @@ library(
   }
   stage("Deployment") {
     println 'Deployment'
-    print(testValue)
+    echo ${env.workspace)
   }
   stage("Activation") {
     println 'Activation'
