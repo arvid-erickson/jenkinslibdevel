@@ -19,10 +19,14 @@ library(
     sayHello()
   }
   stage("Deployment") {
-
+    println 'Deployment'
   }
-  stage("Activation") {}
-  stage("Restart") {}
+  stage("Activation") {
+    println 'Activation'
+  }
+  stage("Restart") {
+    println 'Restart'
+  }
   stage("Cleanup") {
     println 'Testing clenaup f(x) call'
 //    cleanup()
