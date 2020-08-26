@@ -29,7 +29,9 @@ library(
   }
   stage("Activation") {
     println 'Activation'
-    env.workspace = pwd()
+    if (env.workspace -- '') {
+      env.workspace = pwd()
+    }
   }
   stage("Restart") {
     println 'Restart'
