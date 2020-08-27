@@ -28,9 +28,11 @@ library(
   }
   stage("Deployment") {
     println 'Deployment'
+    /*
     node {
       echo ${env.workspace}
     }
+    */
   }
   stage("Activation") {
     println 'Activation'
