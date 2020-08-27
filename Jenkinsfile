@@ -11,14 +11,6 @@ library(
   )
 )
 */
-  env.workspace = ''
-  if (env.workspace == '') {
-      env.workspace = pwd()
-    }
-  environment {
-    PATH=$PATH + '/opt/gradle/gradle-6.5.1/bin'
-  }
-  boolean testValue = false
   stage("Checkout") { 
     println 'Checkout stage'
   }  
@@ -28,11 +20,6 @@ library(
   }
   stage("Deployment") {
     println 'Deployment'
-    /*
-    node {
-      echo ${env.workspace}
-    }
-    */
   }
   stage("Activation") {
     println 'Activation'
