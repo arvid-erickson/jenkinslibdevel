@@ -16,7 +16,6 @@ library(
   }  
   stage("build") { 
     println 'Build stage' 
-    sayHello()
   }
   stage("Deployment") {
     println 'Deployment'
