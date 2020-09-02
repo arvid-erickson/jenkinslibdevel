@@ -23,7 +23,6 @@ library(
   }
   stage("Activation") {
     println 'Activation'
-
   }
   stage("Restart") {
     println 'Restart'
