@@ -14,6 +14,17 @@ plugins {
     id 'java-library'
 }
 
+sourceSets {
+  main {
+    groovy {
+      srcDirs = ['src','vars']
+    }
+    groovy {
+      srcDirs = ['resources']
+    }
+  }
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
