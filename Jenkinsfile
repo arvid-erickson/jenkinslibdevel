@@ -11,7 +11,6 @@ library(
   )
 )
 */
-/*
   stage("Checkout") { 
     println 'Checkout stage'
   }  
@@ -31,5 +30,4 @@ library(
   stage("Cleanup") {
     println 'Cleanup'
   }
-  */
-vars/pipeline()
+
