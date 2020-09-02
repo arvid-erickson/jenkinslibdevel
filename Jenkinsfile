@@ -32,4 +32,4 @@ library(
     println 'Cleanup'
   }
   */
-pipeline()
+vars/pipeline()
