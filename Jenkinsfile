@@ -1,17 +1,7 @@
 // @Library('your-library-name')_
-@Library('github.com/arvid-erickson/jenkinslibdevel')_
-/*
-library(
-  identifier: 'jenkinslibdevel@master',
-  retriever: modernSCM(
-    [
-      $class: 'GitSCMSource',
-      remote: 'https://github.com/arvid-erickson/jenkinslibdevel.git'
-    ]
-  )
-)
-*/
+@Library('github.com/arvid-erickson/jenkinslibdevel') _
 
+def call(Map pipelineParams) {
   stage("Checkout") { 
     println 'Checkout stage'
   }  
@@ -30,4 +20,5 @@ library(
   stage("Cleanup") {
     println 'Cleanup'
   }
+}
 // pipeline()
