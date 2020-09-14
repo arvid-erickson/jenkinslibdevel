@@ -1,20 +1,23 @@
 !#/usr/bin/env groovy
 // /vars/pipeline.groovy
 
-def call (Map pipelineParams) {
-  stage('Build') {
-    build()
+def call(Map pipelineParams) {
+  stage("Checkout") { 
+    println 'Checkout stage'
+  }  
+  stage("build") { 
+    println 'Build stage' 
   }
-  stage('Deplotment') {
-    deployment()
+  stage("Deployment") {
+    println 'Deployment'
   }
-    stage('Activation') {
-  activation()
-    }
-  stage('Restart') {
-    restart()
+  stage("Activation") {
+    println 'Activation'
   }
-  stage('Cleanup') {
-    cleanup()
+  stage("Restart") {
+    println 'Restart'
+  }
+  stage("Cleanup") {
+    println 'Cleanup'
   }
 }
